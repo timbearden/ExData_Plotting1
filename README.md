@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 datasciencecoursera
 ===================
 =======
@@ -116,4 +115,3 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
->>>>>>> ab17cccf0a42ecf23432253913ec824b07d9b90c
