@@ -13,7 +13,7 @@ GAP <- as.numeric(GAP)
 times <- seq(as.POSIXct("2007-02-01 00:00:00"), by = "min", length.out = 24*60*2)
 
 ## Plot the graph
-plot(times, GAP, type = "l", ylab = "Global Active Power (kilowatts)")
+plot(times, GAP, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 ## Copy the graph to a png file
 dev.copy(png, file = "plot2.png")
