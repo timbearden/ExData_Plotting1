@@ -9,12 +9,9 @@ GAP <- data$Global_active_power
 GAP <- as.vector(GAP)
 GAP <- as.numeric(GAP)
 
-## Create a vector of times
-times <- seq(as.POSIXct("2007-02-01 00:00:00"), by = "min", length.out = 24*60*2)
+## Create the histogram with specifications
+hist(GAP, breaks = 12, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 
-## Plot the graph
-plot(times, GAP, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
-
-## Copy the graph to a png file
-dev.copy(png, file = "plot2.png")
+## Copy the histogram to a png file
+dev.copy(png, file = "plot1.png")
 dev.off()
