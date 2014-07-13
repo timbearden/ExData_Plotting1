@@ -38,7 +38,7 @@ Volt <- as.numeric(Volt)
 par(mfcol = c(2, 2))
 
 ## Plot the first graph
-plot(times, GAP, type = "l", ylab = "Global Active Power")
+plot(times, GAP, type = "l", xlab = "", ylab = "Global Active Power")
 
 ## Plot the second graph
 plot(times, Sub1, type = "n", xlab = "", ylab = "Energy sub metering")
@@ -61,3 +61,4 @@ plot(times, GRP, type = "l", ylab = "Global_reactive_power", xlab = "datetime")
 ## Copy the plots to a png file
 dev.copy(png, file = "plot4.png")
 dev.off()
+
